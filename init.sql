@@ -1011,5 +1011,56 @@
             "speed": 65
         },
         "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/136.png"
+    }, {
+      "stats": {
+        "health_points": 45,
+        "attack": 49,
+        "defense": 49,
+        "special_attack": 65,
+        "special_defense": 65,
+        "speed": 45
+      },
+      "_id": "bulbasaur_id",
+      "name": "Bulbasaur",
+      "type": [
+        "Grass",
+        "Poison"
+      ],
+      "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+      "__v": 0
+    },
+    {
+      "stats": {
+        "health_points": 39,
+        "attack": 52,
+        "defense": 43,
+        "special_attack": 60,
+        "special_defense": 50,
+        "speed": 65
+      },
+      "_id": "charmander_id",
+      "name": "Charmander",
+      "type": [
+        "Fire"
+      ],
+      "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+      "__v": 0
+    },
+    {
+      "stats": {
+        "health_points": 44,
+        "attack": 48,
+        "defense": 65,
+        "special_attack": 50,
+        "special_defense": 64,
+        "speed": 43
+      },
+      "_id": "squirtle_id",
+      "name": "Squirtle",
+      "type": [
+        "Water"
+      ],
+      "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+      "__v": 0
     }
 ]
