@@ -32,6 +32,7 @@ const getOnePokemon = async (req, res) => {
 // create a new pokemon
 const createPokemon = async (req, res) => {
 	try {
+		console.log('I am here with single');
 		// Destructure the necessary fields from the request body
 		const { name, type, stats, image_url } = req.body;
 
@@ -45,22 +46,17 @@ const createPokemon = async (req, res) => {
 		res.status(500).json(error);
 	}
 };
+
 // insert many pokemons
-const createManyPokemons = async (req, res) => {
-	try {
-		// Destructure the necessary fields from the request body
-		const { name, type, stats, image_url } = req.body;
-
-		// Create a new Pokemon document with the provided data
-		const pokemon = await Pokemon.insertMany({ name, type, stats, image_url });
-
-		// Send the created Pokemon document as a response
-		res.status(201).json(pokemon);
-	} catch (error) {
-		// Handle errors
-		res.status(500).json(error);
-	}
-};
+// const createManyPokemons = async (req, res) => {
+// 	try {
+// 		console.log('I am inserting multiple data ');
+// 		const pokemon = await Pokemon.create(req.body);
+// 		res.status(201).json(pokemon);
+// 	} catch (error) {
+// 		res.status(500).json(error);
+// 	}
+// };
 
 // update a pokemon
 const updatePokemon = async (req, res) => {
@@ -111,8 +107,7 @@ const deleteOnePokemon = async (req, res) => {
 module.exports = {
 	getAllPokemon,
 	getOnePokemon,
-	createPokemon,
 	updatePokemon,
 	deleteOnePokemon,
-	createManyPokemons,
+	createPokemon,
 };
