@@ -1,51 +1,5 @@
 [
     {
-        "name": "Bulbasaur",
-        "type": [
-            "Grass",
-            "Poison"
-        ],
-        "stats": {
-            "health_points": 45,
-            "attack": 49,
-            "defense": 49,
-            "special_attack": 65,
-            "special_defense": 65,
-            "speed": 45
-        },
-        "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
-    },
-    {
-        "name": "Charmander",
-        "type": [
-            "Fire"
-        ],
-        "stats": {
-            "health_points": 39,
-            "attack": 52,
-            "defense": 43,
-            "special_attack": 60,
-            "special_defense": 50,
-            "speed": 65
-        },
-        "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
-    },
-    {
-        "name": "Squirtle",
-        "type": [
-            "Water"
-        ],
-        "stats": {
-            "health_points": 44,
-            "attack": 48,
-            "defense": 65,
-            "special_attack": 50,
-            "special_defense": 64,
-            "speed": 43
-        },
-        "image_url": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
-    },
-    {
         "name": "Caterpie",
         "type": [
             "Bug"
