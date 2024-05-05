@@ -29,6 +29,22 @@ const getOnePokemon = async (req, res) => {
 	}
 };
 
+// get random pokemon
+const getRandomPokemon = async (req, res) => {
+	try {
+		const pokemon = await Pokemon.aggregate([
+			{ $project: { _id: 0 } }, // Exclude the _id field
+			{ $sample: { size: 1 } }, // Select a random document
+		]);
+		if (pokemon.length > 0) {
+			return res.status(200).json(pokemon[0]);
+		}
+		res.status(404).json({ msg: 'No pokemon found :(' });
+	} catch (error) {
+		res.status(500).json(error);
+	}
+};
+
 // create a new pokemon
 const createPokemon = async (req, res) => {
 	try {
@@ -110,4 +126,5 @@ module.exports = {
 	updatePokemon,
 	deleteOnePokemon,
 	createPokemon,
+	getRandomPokemon,
 };

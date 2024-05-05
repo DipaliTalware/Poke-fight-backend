@@ -7,6 +7,7 @@ const {
 	updatePokemon,
 	deleteOnePokemon,
 	createPokemon,
+	getRandomPokemon,
 } = require('../controllers/pokemon');
 
 // create a new instance or express router
@@ -14,6 +15,7 @@ const api = express.Router();
 
 // decide which controllers to execute on the specific actions
 api.route('/').get(getAllPokemon).post(createPokemon);
+api.route('/random').get(getRandomPokemon);
 
 api
 	.route('/:id')
