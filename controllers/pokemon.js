@@ -33,7 +33,7 @@ const getOnePokemon = async (req, res) => {
 const getRandomPokemon = async (req, res) => {
 	try {
 		const pokemon = await Pokemon.aggregate([
-			{ $project: { _id: 0 } }, // Exclude the _id field
+			// { $project: { _id: 0 } }, // Exclude the _id field
 			{ $sample: { size: 1 } }, // Select a random document
 		]);
 		if (pokemon.length > 0) {
